@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>konversi rupiah ke dolar</h1>
+
+    <!-- prosedur :
+     1. mebuat input rupiah
+     2.tag p untuk menanmpung hasil
+     3.deklarasi variabel rupiah menampung nilai input
+     4.hitung pembagian dari variabel rupiah dibagi 15942 lalu simpan variabel hasil -->
+
+    <label for="rupiah">masukan nilai rupiah</label>
+    <input type="number" id="rupiah" onkeyup="rupiahkedolar()"  placeholder="000"/>
+    <p>hasil konversi ke dolar : <span id="hasil"></span></p>
+
+    <h1>konversi dolar ke rupiah</h1>
+
+    <label for="dolar">masukan nilai dolar</label>
+    <input type="number" id="dolar" onkeyup="dolarkerupiah()" />
+    <p>hasil konversi ke dolar : <span id="hasil2"></span></p>
+
+    <script>
+      function rupiahkedolar() {
+        let rupiah = document.getElementById("rupiah").value;
+        let hasil = rupiah / 15942;
+
+        document.getElementById("hasil").innerHTML = hasil.toFixed(2);
+      }
+
+      function dolarkerupiah() {
+        let dolar = document.getElementById("dolar").value;
+        let hasil2 = dolar * 15942;
+
+        document.getElementById("hasil2").innerHTML = hasil2;
+      }
+    </script>
+  </body>
+</html>

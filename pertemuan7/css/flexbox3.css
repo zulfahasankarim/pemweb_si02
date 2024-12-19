@@ -1,0 +1,22 @@
+.container {
+  width: 95%;
+  height: auto;
+  margin: auto;
+}
+.atas {
+  width: 100%;
+  height: 300px;
+  display: flex;
+}
+.bawah {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  margin-top: 30px;
+}
+.box {
+  width: 90%;
+  height: 200px;
+  background-color: aqua;
+  border: 2px solid black;
+}
